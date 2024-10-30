@@ -14,7 +14,7 @@ function checkForParameters(){
 }
 
 function indexWindow(){
-    if(window.location.href.toString().includes('travel_recommendation.html')){
+    if(window.location.href.toString().includes('index.html')){
 
         resultDiv = document.getElementById("result");
         resultContainer = document.getElementById("results-container");
@@ -27,8 +27,8 @@ function indexWindow(){
 function search() {
     const input= document.getElementById("searchInput").value.trim().toLowerCase();
 
-    if(!window.location.href.toString().includes('travel_recommendation.html')){
-        window.open('./travel_recommendation.html?' + input, "_self");
+    if(!window.location.href.toString().includes('index.html')){
+        window.open('./index.html?' + input, "_self");
         
     }
 
